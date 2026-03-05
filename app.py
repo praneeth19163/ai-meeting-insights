@@ -42,8 +42,8 @@ if st.button("🚀 Analyze Text", type="primary"):
     else:
         with st.spinner("Processing..."):
             try:
-                # Step 1: Generating summary and extracting items
-                st.info("Step 1: Generating summary...")
+                # Analyzing text with single API call
+                st.info("Analyzing text and generating insights...")
                 response = requests.post(
                     f"{API_URL}/analyze-combined",
                     json={"text": text_input}
